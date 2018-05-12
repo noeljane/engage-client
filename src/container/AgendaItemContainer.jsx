@@ -41,12 +41,13 @@ class AgendaItemContainer extends Component {
         }
         
         const container = (
-            <Container text style={{ marginBottom: '10px' }}>
+            <Container text style={{ marginTop: '5px', marginBottom: '8px', backgroundColor: 'lightgray', borderRadius: '5px'}}>
                 <Segment.Group>
                     <Header
                         as='h3'
                         content={title}
                         textAlign='center'
+                        style={{padding: '5px 10px 0px 10px'}}
                     />
                     <Segment>{meetingDate()}</Segment>
                     <Segment>{body[0]}</Segment>
